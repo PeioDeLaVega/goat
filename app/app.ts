@@ -35,7 +35,7 @@ const options = {
 app.use("/static", express.static(join(__dirname, "../public"), options));
 
 app.get("/", (_req, res: express.Response) => {
-	res.send("Open Swagger UI at http://localhost:3000/static/index.html");
+	res.send("Open Swagger UI at http://localhost:5173/static/index.html");
 });
 
 app.get("/api", (_req, res: express.Response) => {
